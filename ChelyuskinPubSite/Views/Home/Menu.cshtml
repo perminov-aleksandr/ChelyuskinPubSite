@@ -1,0 +1,20 @@
+﻿@model ChelyuskinPubSite.Models.MenuViewModel
+@{
+    ViewBag.Title = "Меню";
+}
+
+@foreach (var sect in Model.Sections)
+{
+    <div class="callout">
+        <b class="text-center">@sect.Name</b>
+        <ul class="no-bullet">
+            @foreach (var item in sect.Items)
+            {
+                <li class="row">
+                    <span class="small-10 columns">@item.Name</span>
+                    <span class="small-2 columns">@item.Price</span>
+                </li>
+            }
+        </ul>
+    </div>
+}

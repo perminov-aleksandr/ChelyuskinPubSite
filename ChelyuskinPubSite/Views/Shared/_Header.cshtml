@@ -1,0 +1,17 @@
+﻿<div class="row">
+    <div class="text-center" style="background-color: white">
+        <a href="@Url.Action("Index", "Home")">
+            <img src="~/Content/images/logo.png" width="600" alt="гастропаб 'Челюскин''"/>
+        </a>
+    </div>
+</div>
+<div id="main-menu-wrapper" class="row">
+    <div class="large-offset-3 large-6 columns">
+        <ul class="menu expanded">
+            <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+            <li>@Html.ActionLink("Меню", "Menu", "Home")</li>
+            <li>@Html.ActionLink("Галерея", "About", "Home")</li>
+            <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
+        </ul>
+    </div>
+</div>
